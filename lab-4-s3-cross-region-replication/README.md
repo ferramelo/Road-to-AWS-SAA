@@ -8,8 +8,6 @@ Garantire disaster recovery replicando i dati tra regioni.
 2. Configurare Cross-Region Replication.
 3. Testare la replicazione con upload di file.
 
-## Architettura
-![Diagramma](../assets/lab4-diagram.png)
 
 ## Note personali
 - La gestione dei permessi IAM è cruciale per la replicazione.
