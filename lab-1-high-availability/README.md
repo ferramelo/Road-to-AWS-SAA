@@ -10,7 +10,7 @@ Configurare servizi AWS per garantire alta disponibilità e disaster recovery.
 4. Testare Cross-Region Replication su S3.
 
 ## Architettura
-![Diagramma](../assets/lab1-diagram.png)
+![Diagramma](../home/ferramelo/Scrivania)
 
 ## Note personali
 - Ho imparato a testare il failover manuale.
