@@ -9,8 +9,7 @@ Progettare un’infrastruttura sicura e scalabile.
 3. Creare RDS in subnet private.
 4. Configurare Security Group e NACL.
 
-## Architettura
-![Diagramma](../assets/lab3-diagram.png)
+
 
 ## Note personali
 - Gestione corretta del routing e delle ACL fondamentale per la sicurezza.
