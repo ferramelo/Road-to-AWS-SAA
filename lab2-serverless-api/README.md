@@ -9,9 +9,6 @@ Creare un’API serverless con Lambda + API Gateway + DynamoDB.
 3. Creare tabella DynamoDB e collegarla alla Lambda.
 4. Testare endpoint API.
 
-## Architettura
-![Diagramma](../assets/lab2-diagram.png)
-
 ## Note personali
 - Ottima esercitazione per comprendere l’integrazione serverless.
 - Importanza della gestione dei permessi IAM.
