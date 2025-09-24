@@ -20,7 +20,6 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 ## 📝 Note generali
 - Ogni laboratorio contiene:
   - Descrizione dettagliata
-  - Diagrammi dell’architettura ![diagram](./assets/lab5-diagram.png)
   - Script o template di deploy
   - Note personali e spunti pratici
 - Questo repository serve come **documentazione del mio apprendimento pratico AWS** e come **riferimento per l’esame SAA**.
