@@ -26,7 +26,7 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 ### 3️⃣ VPC + EC2 + RDS 
 **Badge:** `Networking` | `Compute` | `Database`  
 - Progettazione di un’infrastruttura sicura e scalabile  
-- Include diagrammi e script di deploy  
+- Include script di deploy  
 - [Vai al laboratorio](./lab3-vpc-ec2-rds/README.md)
 
 ---
