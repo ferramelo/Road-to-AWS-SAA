@@ -9,8 +9,7 @@ Configurare servizi AWS per garantire alta disponibilità e disaster recovery.
 3. Creare record DNS con Route 53 per il failover.
 4. Testare Cross-Region Replication su S3.
 
-## Architettura
-![Diagramma](../home/ferramelo/Scrivania)
+
 
 ## Note personali
 - Ho imparato a testare il failover manuale.
