@@ -7,7 +7,7 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 
 ## 🛠️ Laboratori principali
 
-### 1️⃣ High Availability & Disaster Recovery ✅
+### 1️⃣ High Availability & Disaster Recovery 
 **Badge:** `High Availability` | `Disaster Recovery` | `Networking`  
 - Configurazione **Multi-AZ** e failover DNS con Route 53  
 - Test di **Cross-Region Replication** su S3  
@@ -15,7 +15,7 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 
 ---
 
-### 2️⃣ Serverless API ✅
+### 2️⃣ Serverless API 
 **Badge:** `Serverless` | `Lambda` | `API Gateway` | `DynamoDB`  
 - Creazione di un’**API serverless**  
 - Include esempi di deploy e codice funzionante  
@@ -23,7 +23,7 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 
 ---
 
-### 3️⃣ VPC + EC2 + RDS ✅
+### 3️⃣ VPC + EC2 + RDS 
 **Badge:** `Networking` | `Compute` | `Database`  
 - Progettazione di un’infrastruttura sicura e scalabile  
 - Include diagrammi e script di deploy  
@@ -31,7 +31,7 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 
 ---
 
-### 4️⃣ S3 Cross-Region Replication ✅
+### 4️⃣ S3 Cross-Region Replication 
 **Badge:** `Storage` | `High Availability` | `Disaster Recovery`  
 - Replicazione dei dati tra regioni per garantire alta disponibilità  
 - Include note pratiche e configurazioni  
@@ -39,7 +39,7 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 
 ---
 
-### 5️⃣ CloudFront CDN ✅
+### 5️⃣ CloudFront CDN 
 **Badge:** `CDN` | `Static Content` | `Caching`  
 - Distribuzione globale di contenuti statici  
 - Gestione di caching e permessi  
