@@ -5,4 +5,5 @@
 # =====================================================
 
 # --- Inserisci qui i comandi per test connessione MySQL/Postgres ---
+
 # Ricorda di rendere eseguibili gli script: chmod +x scripts/*.sh 
