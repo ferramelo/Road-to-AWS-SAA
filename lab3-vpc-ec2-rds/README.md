@@ -21,6 +21,7 @@ flowchart TD
     EC2_1 -->|HTTP/SSH| IGW
     EC2_1 -->|MySQL/Postgres| RDS
 
+---
 
 ## 🛠️ Passaggi principali
 1. 🛠️ Creare **VPC** con **subnet pubbliche e private**  
