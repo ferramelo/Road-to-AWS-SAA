@@ -5,3 +5,6 @@
 # =====================================================
 
 # --- Inserisci qui i comandi per installare pacchetti, configurare firewall ecc. ---
+
+# Ricorda di rendere eseguibili gli script: chmod +x scripts/*.sh 
+
