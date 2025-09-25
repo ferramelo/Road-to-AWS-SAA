@@ -5,13 +5,14 @@ Ho selezionato 5 laboratori chiave per approfondire concetti fondamentali di AWS
 ---
 
 ## 🖼️ Diagramma generale
-
 ```mermaid
 flowchart TD
     A[High Availability & Disaster Recovery] --> B[Serverless API]
     B --> C[VPC + EC2 + RDS]
     C --> D[S3 Cross-Region Replication]
     D --> E[CloudFront CDN]
+```
+
 ---
 
 ## 🛠️ Laboratori principali
@@ -26,7 +27,7 @@ flowchart TD
 
 ### 2️⃣ Serverless API 
 **Badge:** `Serverless` | `Lambda` | `API Gateway` | `DynamoDB`  
-- Creazione di un’**API serverless**  
+- Creazione di un'**API serverless**  
 - Include esempi di deploy e codice funzionante  
 - [Vai al laboratorio](./lab2-serverless-api/README.md)
 
@@ -34,7 +35,7 @@ flowchart TD
 
 ### 3️⃣ VPC + EC2 + RDS 
 **Badge:** `Networking` | `Compute` | `Database`  
-- Progettazione di un’infrastruttura sicura e scalabile  
+- Progettazione di un'infrastruttura sicura e scalabile  
 - Include script di deploy  
 - [Vai al laboratorio](./lab3-vpc-ec2-rds/README.md)
 
@@ -61,9 +62,9 @@ flowchart TD
   - Descrizione dettagliata
   - Script o template di deploy
   - Note personali e spunti pratici
-- Questo repository serve come **documentazione del mio apprendimento pratico AWS** e come **riferimento per l’esame SAA**.
+- Questo repository serve come **documentazione del mio apprendimento pratico AWS** e come **riferimento per l'esame SAA**.
 
 ---
 
 ## ⚡ Obiettivo
-Consolidare le competenze pratiche su AWS, documentare i laboratori più rilevanti e prepararsi efficacemente all’esame **AWS SAA**.
+Consolidare le competenze pratiche su AWS, documentare i laboratori più rilevanti e prepararsi efficacemente all'esame **AWS SAA**.
