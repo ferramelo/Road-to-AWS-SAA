@@ -9,7 +9,7 @@ flowchart TD
     A["🏗️ High Availability & Disaster Recovery"] --> B["⚡ Serverless API"]
     ...
 
-## 🛠️ Laboratori principali
+## Laboratori principali
 
 ### 1️⃣ High Availability & Disaster Recovery 
 **Badge:** `High Availability` | `Disaster Recovery` | `Networking`  
