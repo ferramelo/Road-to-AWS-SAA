@@ -12,7 +12,6 @@ flowchart TD
     B --> C[VPC + EC2 + RDS]
     C --> D[S3 Cross-Region Replication]
     D --> E[CloudFront CDN]
-
 ---
 
 ## 🛠️ Laboratori principali
