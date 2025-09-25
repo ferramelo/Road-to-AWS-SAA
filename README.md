@@ -47,6 +47,30 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 
 ---
 
+## 🖼️ Diagramma generale
+
+```mermaid
+flowchart TD
+    A[High Availability & Disaster Recovery] --> B[Serverless API]
+    B --> C[VPC + EC2 + RDS]
+    C --> D[S3 Cross-Region Replication]
+    D --> E[CloudFront CDN]
+
+    %% styling
+    A:::lab1
+    B:::lab2
+    C:::lab3
+    D:::lab4
+    E:::lab5
+
+    classDef lab1 fill:#f6d365,stroke:#333,stroke-width:2px;
+    classDef lab2 fill:#fda085,stroke:#333,stroke-width:2px;
+    classDef lab3 fill:#a1c4fd,stroke:#333,stroke-width:2px;
+    classDef lab4 fill:#c2e9fb,stroke:#333,stroke-width:2px;
+    classDef lab5 fill:#84fab0,stroke:#333,stroke-width:2px;
+
+---
+
 ## 📝 Note generali
 - Ogni laboratorio contiene:
   - Descrizione dettagliata
