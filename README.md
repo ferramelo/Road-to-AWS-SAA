@@ -1,7 +1,31 @@
 # 🚀 Road to AWS SAA
 
-Questo repository documenta il mio percorso verso la **certificazione AWS Solutions Architect – Associate (SAA)**.  
-Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di AWS: **high availability**, **serverless**, **networking** e **gestione dei dati**.
+Questo repository documenta il mio percorso verso la certificazione **AWS Solutions Architect – Associate (SAA)**.  
+Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di AWS: high availability, serverless, networking e gestione dei dati.
+
+---
+
+## 🖼️ Diagramma generale
+
+```mermaid
+flowchart TD
+    A[High Availability & Disaster Recovery] --> B[Serverless API]
+    B --> C[VPC + EC2 + RDS]
+    C --> D[S3 Cross-Region Replication]
+    D --> E[CloudFront CDN]
+
+    %% styling
+    A:::lab1
+    B:::lab2
+    C:::lab3
+    D:::lab4
+    E:::lab5
+
+    classDef lab1 fill:#f6d365,stroke:#333,stroke-width:2px;
+    classDef lab2 fill:#fda085,stroke:#333,stroke-width:2px;
+    classDef lab3 fill:#a1c4fd,stroke:#333,stroke-width:2px;
+    classDef lab4 fill:#c2e9fb,stroke:#333,stroke-width:2px;
+    classDef lab5 fill:#84fab0,stroke:#333,stroke-width:2px;
 
 ---
 
@@ -44,30 +68,6 @@ Ho selezionato **5 laboratori chiave** per approfondire concetti fondamentali di
 - Distribuzione globale di contenuti statici  
 - Gestione di caching e permessi  
 - [Vai al laboratorio](./lab5-cloudfront-cdn/README.md)
-
----
-
-## 🖼️ Diagramma generale
-
-```mermaid
-flowchart TD
-    A[High Availability & Disaster Recovery] --> B[Serverless API]
-    B --> C[VPC + EC2 + RDS]
-    C --> D[S3 Cross-Region Replication]
-    D --> E[CloudFront CDN]
-
-    %% styling
-    A:::lab1
-    B:::lab2
-    C:::lab3
-    D:::lab4
-    E:::lab5
-
-    classDef lab1 fill:#f6d365,stroke:#333,stroke-width:2px;
-    classDef lab2 fill:#fda085,stroke:#333,stroke-width:2px;
-    classDef lab3 fill:#a1c4fd,stroke:#333,stroke-width:2px;
-    classDef lab4 fill:#c2e9fb,stroke:#333,stroke-width:2px;
-    classDef lab5 fill:#84fab0,stroke:#333,stroke-width:2px;
 
 ---
 
