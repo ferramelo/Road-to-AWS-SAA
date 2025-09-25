@@ -1,0 +1,29 @@
+{
+  "SecurityGroupName": "Lab3-SG",
+  "Description": "Security Group per EC2 e RDS nel Lab 3",
+  "VPC": "Lab3-VPC",
+  "IngressRules": [
+    {
+      "Protocol": "tcp",
+      "PortRange": "22",
+      "Source": "TUO_IP"
+    },
+    {
+      "Protocol": "tcp",
+      "PortRange": "80",
+      "Source": "0.0.0.0/0"
+    },
+    {
+      "Protocol": "tcp",
+      "PortRange": "3306",
+      "Source": "EC2-Private-IP-or-SG"
+    }
+  ],
+  "EgressRules": [
+    {
+      "Protocol": "-1",
+      "PortRange": "all",
+      "Destination": "0.0.0.0/0"
+    }
+  ]
+}
