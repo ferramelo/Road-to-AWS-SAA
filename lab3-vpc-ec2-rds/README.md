@@ -28,4 +28,3 @@ flowchart TD
     EC2_2 -->|HTTP/SSH| IGW
     EC2_1 -->|MySQL/Postgres| RDS_1
     EC2_2 -->|MySQL/Postgres| RDS_2
-
