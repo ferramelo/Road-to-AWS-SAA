@@ -1,0 +1,8 @@
+{
+  "DBSubnetGroupName": "Lab3-DB-SubnetGroup",
+  "Description": "Subnet Group per RDS nel Lab 3",
+  "Subnets": [
+    "10.0.3.0/24",
+    "10.0.4.0/24"
+  ]
+}
