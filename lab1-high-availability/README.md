@@ -29,29 +29,28 @@ Configurare servizi **AWS** per garantire:
 
 ```mermaid
 flowchart TD
-    subgraph AWS["🌐 AWS Cloud"]
+    subgraph AWS["AWS Cloud"]
         subgraph Region1["Region 1"]
             subgraph VPC1["VPC"]
-                DB1[🗄️ RDS Primary (Multi-AZ)]
-                DB2[🗄️ RDS Standby (Multi-AZ)]
-                S3A[(📦 S3 Bucket)]
+                DB1[RDS Primary (Multi-AZ)]
+                DB2[RDS Standby (Multi-AZ)]
+                S3A[(S3 Bucket)]
             end
         end
 
         subgraph Region2["Region 2 (DR Site)"]
             subgraph VPC2["VPC"]
-                DB3[🗄️ RDS Replica (Cross-Region)]
-                S3B[(📦 S3 Replica)]
+                DB3[RDS Replica (Cross-Region)]
+                S3B[(S3 Replica)]
             end
         end
 
-        Route53[🌍 Route 53 DNS Failover]
+        Route53[Route 53 DNS Failover]
     end
 
-    User[👤 Utente] --> Route53
+    User[Utente] --> Route53
     Route53 --> DB1
     Route53 -.Failover Automatico.-> DB2
     Route53 -.Cross-Region Failover.-> DB3
 
     S3A --> S3B
-
