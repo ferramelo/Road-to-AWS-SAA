@@ -7,10 +7,24 @@ Ho selezionato 5 laboratori chiave per approfondire concetti fondamentali di AWS
 ## 🖼️ Diagramma generale
 ```mermaid
 flowchart TD
-    A["High Availability & Disaster Recovery"] --> B["Serverless API"]
-    B --> C["VPC + EC2 + RDS"]  
-    C --> D["S3 Cross-Region Replication"]
-    D --> E["CloudFront CDN"]
+    A["Lab 1: High Availability & Disaster Recovery"]
+    B["Lab 2: Serverless API"]
+    C["Lab 3: VPC + EC2 + RDS"]
+    D["Lab 4: S3 Cross-Region Replication"]
+    E["Lab 5: CloudFront CDN"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    %% STILI
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ff9,stroke:#333,stroke-width:2px
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
+    style E fill:#ff9,stroke:#333,stroke-width:2px
+
 ```
 
 ---
