@@ -32,6 +32,8 @@ Creare un’API serverless utilizzando:
 
 ## 🖼️ Diagramma
 
+```mermaid
+
 flowchart TD
     subgraph AWS["AWS Cloud"]
         Lambda["LAMBDA FUNCTION"]
