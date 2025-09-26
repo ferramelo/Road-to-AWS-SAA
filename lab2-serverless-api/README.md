@@ -46,7 +46,7 @@ flowchart TD
     Lambda --> DynamoDB
 
     %% STILI
-    style Lambda fill:#f9f,stroke:#333,stroke-width:2px
-    style API fill:#ff9,stroke:#333,stroke-width:2px
-    style DynamoDB fill:#bbf,stroke:#333,stroke-width:2px
+    style Lambda fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style API fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style DynamoDB fill:#2c3e50,stroke:#fff,stroke-width:2px
 
