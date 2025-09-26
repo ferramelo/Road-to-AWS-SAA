@@ -18,12 +18,12 @@ flowchart TD
     C --> D
     D --> E
 
-    %% STILI DARK
-    style A fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
-    style B fill:#34495e,stroke:#fff,stroke-width:2px,color:#fff
-    style C fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
-    style D fill:#34495e,stroke:#fff,stroke-width:2px,color:#fff
-    style E fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
+    %% STILI DARK COMPATIBILI GITHUB
+    style A fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style B fill:#34495e,stroke:#fff,stroke-width:2px
+    style C fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style D fill:#34495e,stroke:#fff,stroke-width:2px
+    style E fill:#2c3e50,stroke:#fff,stroke-width:2px
 
 
 ## 🛠️ Laboratori principali
