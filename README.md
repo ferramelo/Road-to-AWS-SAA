@@ -18,14 +18,12 @@ flowchart TD
     C --> D
     D --> E
 
-    %% STILI
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#ff9,stroke:#333,stroke-width:2px
-    style C fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style E fill:#ff9,stroke:#333,stroke-width:2px
-
-```
+    %% STILI DARK
+    style A fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#34495e,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#34495e,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
 
 ---
 
