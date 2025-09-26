@@ -46,19 +46,26 @@ flowchart TD
     subgraph AWS["AWS Cloud"]
         subgraph VPC["VPC 10.0.0.0/16"]
             subgraph PublicSubnet["Public Subnet 10.0.1.0/24"]
-                EC2["EC2 Bastion Host - Porta SSH 22"]
+                EC2["EC2 BASTION HOST - SSH 22"]
             end
             subgraph PrivateSubnet["Private Subnet 10.0.2.0/24"]
-                RDS["RDS MySQL - Porta DB 3306"]
+                RDS["RDS MYSQL - DB 3306"]
             end
         end
 
-        IGW["Internet Gateway"]
-        RouteTablePublic["Route Table Pub - 0.0.0.0/0 → IGW"]
-        RouteTablePrivate["Route Table Priv - Isolata da Internet"]
+        IGW["INTERNET GATEWAY"]
+        RouteTablePublic["ROUTE TABLE PUB"]
+        RouteTablePrivate["ROUTE TABLE PRIV"]
     end
 
     User["User"] -->|SSH| EC2
     EC2 -->|Query DB| RDS
     PublicSubnet --> RouteTablePublic
     PrivateSubnet --> RouteTablePrivate
+
+    %% STILI
+    style EC2 fill:#f9f,stroke:#333,stroke-width:2px
+    style RDS fill:#f9f,stroke:#333,stroke-width:2px
+    style IGW fill:#ff9,stroke:#333,stroke-width:2px
+    style RouteTablePublic fill:#bbf,stroke:#333,stroke-width:2px
+    style RouteTablePrivate fill:#bbf,stroke:#333,stroke-width:2px
