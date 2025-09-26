@@ -30,9 +30,13 @@ Garantire disaster recovery replicando i dati tra più regioni AWS.
 ```mermaid
 flowchart TD
     subgraph AWS["AWS Cloud"]
-        S3Primary["S3 Bucket Primario"]
-        S3Replica["S3 Bucket Replica"]
+        S3Primary["S3 BUCKET PRIMARIO"]
+        S3Replica["S3 BUCKET REPLICA"]
     end
 
     User["User"] --> S3Primary
     S3Primary -->|Cross-Region Replication| S3Replica
+
+    %% STILI
+    style S3Primary fill:#bbf,stroke:#333,stroke-width:2px
+    style S3Replica fill:#bbf,stroke:#333,stroke-width:2px
