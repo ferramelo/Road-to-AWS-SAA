@@ -56,9 +56,9 @@ flowchart TD
     S3A -->|Cross-Region Replication| S3B
 
     %% STILI
-    style DB1 fill:#f9f,stroke:#333,stroke-width:2px
-    style DB2 fill:#f9f,stroke:#333,stroke-width:2px
-    style DB3 fill:#f9f,stroke:#333,stroke-width:2px
-    style S3A fill:#bbf,stroke:#333,stroke-width:2px
-    style S3B fill:#bbf,stroke:#333,stroke-width:2px
-    style Route53 fill:#ff9,stroke:#333,stroke-width:2px
+    style DB1 fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style DB2 fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style DB3 fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style S3A fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style S3B fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style Route53 fill:#2c3e50,stroke:#fff,stroke-width:2px
