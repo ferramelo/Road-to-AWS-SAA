@@ -32,15 +32,19 @@ Creare un’API serverless utilizzando:
 
 ## 🖼️ Diagramma
 
-```mermaid
 flowchart TD
     subgraph AWS["AWS Cloud"]
-        Lambda["Lambda Function"]
-        API["API Gateway"]
-        DynamoDB["DynamoDB Table"]
+        Lambda["LAMBDA FUNCTION"]
+        API["API GATEWAY"]
+        DynamoDB["DYNAMODB TABLE"]
     end
 
     User["User"] --> API
     API --> Lambda
     Lambda --> DynamoDB
+
+    %% STILI
+    style Lambda fill:#f9f,stroke:#333,stroke-width:2px
+    style API fill:#ff9,stroke:#333,stroke-width:2px
+    style DynamoDB fill:#bbf,stroke:#333,stroke-width:2px
 
