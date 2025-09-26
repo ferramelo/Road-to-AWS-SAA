@@ -6,7 +6,6 @@ Ho selezionato 5 laboratori chiave per approfondire concetti fondamentali di AWS
 
 ## 🖼️ Diagramma generale
 ```mermaid
-
 flowchart TD
     A["Lab 1: High Availability & Disaster Recovery"]
     B["Lab 2: Serverless API"]
