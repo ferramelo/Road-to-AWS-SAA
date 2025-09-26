@@ -1,10 +1,9 @@
 # 🚀 Road to AWS SAA
-Questo repository documenta il mio percorso verso la certificazione **AWS Solutions Architect – Associate (SAA)**.  
-Ho selezionato 5 laboratori chiave per approfondire concetti fondamentali di AWS: high availability, serverless, networking e gestione dei dati.
 
----
+Questo repository documenta il mio percorso verso la certificazione **AWS Solutions Architect – Associate (SAA)**. Ho selezionato 5 laboratori chiave per approfondire concetti fondamentali di AWS: high availability, serverless, networking e gestione dei dati.
 
 ## 🖼️ Diagramma generale
+
 ```mermaid
 flowchart TD
     A["Lab 1: High Availability & Disaster Recovery"]
@@ -18,12 +17,12 @@ flowchart TD
     C --> D
     D --> E
 
-    %% STILI DARK COMPATIBILI GITHUB
     style A fill:#2c3e50,stroke:#fff,stroke-width:2px
     style B fill:#34495e,stroke:#fff,stroke-width:2px
     style C fill:#2c3e50,stroke:#fff,stroke-width:2px
     style D fill:#34495e,stroke:#fff,stroke-width:2px
     style E fill:#2c3e50,stroke:#fff,stroke-width:2px
+```
 
 ## 🛠️ Laboratori principali
 
@@ -64,6 +63,24 @@ flowchart TD
 - Distribuzione globale di contenuti statici  
 - Gestione di caching e permessi  
 - [Vai al laboratorio](./lab5-cloudfront-cdn/README.md)
+
+---
+
+## 📚 Risorse di studio aggiuntive
+
+### Concetti chiave per l'esame SAA:
+- **Compute**: EC2, Lambda, ECS, EKS, Auto Scaling
+- **Storage**: S3, EBS, EFS, FSx, Storage Gateway
+- **Database**: RDS, DynamoDB, ElastiCache, Redshift
+- **Networking**: VPC, Route 53, CloudFront, ELB, Direct Connect
+- **Security**: IAM, Cognito, KMS, Secrets Manager, GuardDuty
+- **Monitoring**: CloudWatch, CloudTrail, X-Ray
+
+### Suggerimenti per l'esame:
+- Focalizzati sui **trade-offs** tra soluzioni (costo vs performance vs availability)
+- Comprendi bene i **Well-Architected Framework** pillars
+- Pratica con domande sui **disaster recovery patterns** (RPO/RTO)
+- Studia i **pricing models** dei servizi principali
 
 ---
 
