@@ -64,8 +64,8 @@ flowchart TD
     PrivateSubnet --> RouteTablePrivate
 
     %% STILI
-    style EC2 fill:#f9f,stroke:#333,stroke-width:2px
-    style RDS fill:#f9f,stroke:#333,stroke-width:2px
-    style IGW fill:#ff9,stroke:#333,stroke-width:2px
-    style RouteTablePublic fill:#bbf,stroke:#333,stroke-width:2px
-    style RouteTablePrivate fill:#bbf,stroke:#333,stroke-width:2px
+    style EC2 fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style RDS fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style IGW fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style RouteTablePublic fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style RouteTablePrivate fill:#2c3e50,stroke:#fff,stroke-width:2px
