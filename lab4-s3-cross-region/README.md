@@ -38,5 +38,5 @@ flowchart TD
     S3Primary -->|Cross-Region Replication| S3Replica
 
     %% STILI
-    style S3Primary fill:#bbf,stroke:#333,stroke-width:2px
-    style S3Replica fill:#bbf,stroke:#333,stroke-width:2px
+    style S3Primary fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style S3Replica fill:#2c3e50,stroke:#fff,stroke-width:2px
