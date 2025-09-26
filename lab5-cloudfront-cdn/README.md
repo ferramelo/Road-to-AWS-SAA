@@ -39,6 +39,6 @@ flowchart TD
     CF --> S3
 
     %% STILI
-    style S3 fill:#bbf,stroke:#333,stroke-width:2px
-    style CF fill:#ff9,stroke:#333,stroke-width:2px
+    style S3 fill:#2c3e50,stroke:#fff,stroke-width:2px
+    style CF fill:#2c3e50,stroke:#fff,stroke-width:2px
 
