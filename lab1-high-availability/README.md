@@ -32,25 +32,33 @@ flowchart TD
     subgraph AWS["AWS Cloud"]
         subgraph Region1["Region 1"]
             subgraph VPC1["VPC"]
-                DB1[RDS Primary - Multi-AZ]
-                DB2[RDS Standby - Multi-AZ]
-                S3A[(S3 Bucket)]
+                DB1[RDS PRIMARY - Multi-AZ]
+                DB2[RDS STANDBY - Multi-AZ]
+                S3A[(S3 BUCKET)]
             end
         end
 
         subgraph Region2["Region 2 - DR Site"]
             subgraph VPC2["VPC"]
-                DB3[RDS Replica - Cross Region]
-                S3B[(S3 Replica)]
+                DB3[RDS REPLICA - Cross Region]
+                S3B[(S3 REPLICA)]
             end
         end
 
-        Route53[Route 53 DNS Failover]
+        Route53[ROUTE 53 DNS FAILOVER]
     end
 
-    User[User] --> Route53
+    User["User"] --> Route53
     Route53 --> DB1
-    Route53 -.Failover Automatico.-> DB2
-    Route53 -.Cross Region Failover.-> DB3
+    Route53 -.FAILOVER AUTOMATICO.-> DB2
+    Route53 -.CROSS REGION FAILOVER.-> DB3
 
-    S3A --> S3B
+    S3A -->|Cross-Region Replication| S3B
+
+    %% STILI
+    style DB1 fill:#f9f,stroke:#333,stroke-width:2px
+    style DB2 fill:#f9f,stroke:#333,stroke-width:2px
+    style DB3 fill:#f9f,stroke:#333,stroke-width:2px
+    style S3A fill:#bbf,stroke:#333,stroke-width:2px
+    style S3B fill:#bbf,stroke:#333,stroke-width:2px
+    style Route53 fill:#ff9,stroke:#333,stroke-width:2px
