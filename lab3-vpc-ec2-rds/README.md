@@ -27,8 +27,8 @@ flowchart TD
     PrivateSubnet --> RouteTablePrivate
     
 
-
- 🛠️ Passaggi principali 
+   Passaggi principali 
+   
 1. 🛠️ Creare **VPC** con **subnet pubbliche e private** 
 2. 💻 Lanciare **EC2** nelle **subnet pubbliche** 
 3. 🗄️ Creare **RDS** nelle **subnet private** 
