@@ -22,9 +22,9 @@ flowchart TD
     PublicSubnet --> RouteTablePublic
     PrivateSubnet --> RouteTablePrivate
 
-   Passaggi principali 
+🛠️ Passaggi principali 
    
-1. 🗄️ Creare **VPC** con **subnet pubbliche e private** 
+1. 🛠️ Creare **VPC** con **subnet pubbliche e private** 
 2. 💻 Lanciare **EC2** nelle **subnet pubbliche** 
 3. 🗄️ Creare **RDS** nelle **subnet private** 
 4. 🔐 Configurare **Security Group** e **NACL** 
