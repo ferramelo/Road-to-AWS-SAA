@@ -25,8 +25,6 @@ flowchart TD
     style D fill:#34495e,stroke:#fff,stroke-width:2px,color:#fff
     style E fill:#2c3e50,stroke:#fff,stroke-width:2px,color:#fff
 
----
----
 
 ## 🛠️ Laboratori principali
 
