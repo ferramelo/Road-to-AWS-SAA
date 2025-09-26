@@ -31,9 +31,14 @@ Distribuire contenuti statici a livello globale con caching e gestione dei perme
 ```mermaid
 flowchart TD
     subgraph AWS["AWS Cloud"]
-        S3["S3 Bucket Contenuti Statici"]
-        CF["CloudFront Distribution"]
+        S3["S3 BUCKET CONTENUTI STATICI"]
+        CF["CLOUDFRONT DISTRIBUTION"]
     end
 
     User["User"] --> CF
     CF --> S3
+
+    %% STILI
+    style S3 fill:#bbf,stroke:#333,stroke-width:2px
+    style CF fill:#ff9,stroke:#333,stroke-width:2px
+
