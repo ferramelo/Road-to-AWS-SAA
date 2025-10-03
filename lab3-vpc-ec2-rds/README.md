@@ -15,6 +15,16 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ---
 
+## 🔗 File Terraform
+
+- [lab3-vpc.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/lab3-vpc.tf) – Creazione VPC e subnet  
+- [lab3-ec2.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/lab3-ec2.tf) – EC2 Bastion Host  
+- [lab3-rds.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/lab3-rds.tf) – RDS MySQL  
+- [variables.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/variables.tf) – Variabili Terraform  
+- [outputs.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/outputs.tf) – Output della configurazione  
+
+---
+
 ## 🔒 Security Highlights
 
 - ✅ **Bastion Host Pattern**: Accesso sicuro alle risorse private  
