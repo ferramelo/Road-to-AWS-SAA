@@ -13,15 +13,23 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 4. 🔐 **Setup Security Groups** e Network ACLs  
 5. 🌐 **Configurare routing** e Internet Gateway  
 
+
 ---
 
-## 🔗 File Terraform
+## 📁 Struttura della cartella
 
-- [lab3-vpc.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/lab3-vpc.tf) – Creazione VPC e subnet  
-- [lab3-ec2.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/lab3-ec2.tf) – EC2 Bastion Host  
-- [lab3-rds.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/lab3-rds.tf) – RDS MySQL  
-- [variables.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/variables.tf) – Variabili Terraform  
-- [outputs.tf](https://github.com/CarmeloFerraro/lab3-vpc-ec2-rds/blob/main/outputs.tf) – Output della configurazione  
+| File / Cartella | Descrizione | Link |
+|-----------------|------------|------|
+| `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./lab3-vpc-ec2-rds/backend.tf) |
+| `variables.tf`  | Definizione delle variabili Terraform | [variables.tf](./lab3-vpc-ec2-rds/variables.tf) |
+| `terraform.tfvars` | Valori delle variabili principali | [terraform.tfvars](./lab3-vpc-ec2-rds/terraform.tfvars) |
+| `vpc.tf`        | Configurazione della VPC, subnet e route table | [vpc.tf](./lab3-vpc-ec2-rds/vpc.tf) |
+| `security.tf`   | Security Groups e regole di accesso | [security.tf](./lab3-vpc-ec2-rds/security.tf) |
+| `ec2.tf`        | Bastion Host EC2 e configurazioni associate | [ec2.tf](./lab3-vpc-ec2-rds/ec2.tf) |
+| `rds.tf`        | Database RDS MySQL | [rds.tf](./lab3-vpc-ec2-rds/rds.tf) |
+| `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./lab3-vpc-ec2-rds/outputs.tf) |
+| `Makefile`      | Comandi rapidi per Terraform (`init`, `plan`, `apply`, `destroy`) | [Makefile](./lab3-vpc-ec2-rds/Makefile) |
+| `scripts/`      | Script di automazione e test | [scripts](./lab3-vpc-ec2-rds/scripts/) |
 
 ---
 
