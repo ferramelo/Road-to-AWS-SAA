@@ -50,6 +50,22 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ---
 
+## 📊 Monitoring & Logging
+
+- **CloudWatch Metrics**:  
+  Monitora le performance delle risorse AWS come EC2, RDS e VPC. Esempi: CPUUtilization, FreeStorageSpace, NetworkIn/Out.
+  
+- **VPC Flow Logs**:  
+  Registra tutto il traffico IP in ingresso e in uscita dalle subnet, dai security group e dalle interfacce di rete. Utile per:  
+  - Analisi della sicurezza  
+  - Debugging di connettività tra EC2 e RDS  
+  - Audit e compliance  
+
+- **Visualizzazione**:  
+  I log possono essere inviati a CloudWatch Logs o S3. Dashboard personalizzate in CloudWatch forniscono visione in tempo reale.
+
+---
+
 ## 📌 Learning Focus
 
 *Questo laboratorio consolida i concetti di **networking**, **sicurezza** e **database management** fondamentali per l'esame AWS Solutions Architect Associate.*
