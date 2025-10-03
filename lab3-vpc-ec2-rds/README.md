@@ -13,22 +13,27 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 4. 🔐 **Setup Security Groups** e Network ACLs  
 5. 🌐 **Configurare routing** e Internet Gateway  
 
-
 ---
+
+## 📁 Struttura della cartella
 
 | File / Cartella | Descrizione | Link |
 |-----------------|------------|------|
-| `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./backend.tf) |
-| `variables.tf`  | Definizione delle variabili Terraform | [variables.tf](./variables.tf) |
-| `terraform.tfvars` | Valori delle variabili principali | [terraform.tfvars](./terraform.tfvars) |
-| `vpc.tf`        | Configurazione della VPC, subnet e route table | [vpc.tf](./vpc.tf) |
-| `security.tf`   | Security Groups e regole di accesso | [security.tf](./security.tf) |
-| `ec2.tf`        | Bastion Host EC2 e configurazioni associate | [ec2.tf](./ec2.tf) |
-| `rds.tf`        | Database RDS MySQL | [rds.tf](./rds.tf) |
-| `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./outputs.tf) |
-| `Makefile`      | Comandi rapidi per Terraform (`init`, `plan`, `apply`, `destroy`) | [Makefile](./Makefile) |
-| `scripts/`      | Script di automazione e test | [scripts](./scripts/) |
-| `screenshots/`  | Screenshot del laboratorio | [screenshots](./screenshots/) |
+| `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./lab3-vpc-ec2-rds/backend.tf) |
+| `variables.tf`  | Definizione delle variabili Terraform | [variables.tf](./lab3-vpc-ec2-rds/variables.tf) |
+| `terraform.tfvars` | Valori delle variabili principali | [terraform.tfvars](./lab3-vpc-ec2-rds/terraform.tfvars) |
+| `vpc.tf`        | Configurazione della VPC, subnet e route table | [vpc.tf](./lab3-vpc-ec2-rds/vpc.tf) |
+| `security.tf`   | Security Groups e regole di accesso | [security.tf](./lab3-vpc-ec2-rds/security.tf) |
+| `ec2.tf`        | Bastion Host EC2 e configurazioni associate | [ec2.tf](./lab3-vpc-ec2-rds/ec2.tf) |
+| `rds.tf`        | Database RDS MySQL | [rds.tf](./lab3-vpc-ec2-rds/rds.tf) |
+| `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./lab3-vpc-ec2-rds/outputs.tf) |
+| `Makefile`      | Comandi rapidi per Terraform (`init`, `plan`, `apply`, `destroy`) | [Makefile](./lab3-vpc-ec2-rds/Makefile) |
+| `scripts/connect_bastion.sh` | Connessione SSH al Bastion Host | [connect_bastion.sh](./lab3-vpc-ec2-rds/scripts/connect_bastion.sh) |
+| `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](./lab3-vpc-ec2-rds/scripts/connect_rds.sh) |
+| `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./lab3-vpc-ec2-rds/scripts/test_infra.sh) |
+| `conf/security-group.json` | Configurazione JSON Security Group | [security-group.json](./lab3-vpc-ec2-rds/conf/security-group.json) |
+| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [db-subnet-group.json](./lab3-vpc-ec2-rds/conf/db-subnet-group.json) |
+| `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./lab3-vpc-ec2-rds/screenshots/) |
 
 ---
 
@@ -47,22 +52,6 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 - **Multi-AZ Setup**: Subnet in AZ diverse per high availability  
 - **Cost Optimization**: Utilizzo di t3.micro per testing  
 - **Monitoring**: CloudWatch per metriche e VPC Flow Logs  
-
----
-
-## 📊 Monitoring & Logging
-
-- **CloudWatch Metrics**:  
-  Monitora le performance delle risorse AWS come EC2, RDS e VPC. Esempi: CPUUtilization, FreeStorageSpace, NetworkIn/Out.
-  
-- **VPC Flow Logs**:  
-  Registra tutto il traffico IP in ingresso e in uscita dalle subnet, dai security group e dalle interfacce di rete. Utile per:  
-  - Analisi della sicurezza  
-  - Debugging di connettività tra EC2 e RDS  
-  - Audit e compliance  
-
-- **Visualizzazione**:  
-  I log possono essere inviati a CloudWatch Logs o S3. Dashboard personalizzate in CloudWatch forniscono visione in tempo reale.
 
 ---
 
