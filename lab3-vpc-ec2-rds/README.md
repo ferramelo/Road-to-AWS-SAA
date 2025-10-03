@@ -15,6 +15,8 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ---
 
+## 📁 Struttura della cartella
+
 | File / Cartella | Descrizione | Link |
 |-----------------|------------|------|
 | `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./backend.tf) |
