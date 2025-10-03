@@ -33,7 +33,7 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./lab3-vpc-ec2-rds/scripts/test_infra.sh) |
 | `conf/security-group.json` | Configurazione JSON Security Group | [security-group.json](./lab3-vpc-ec2-rds/conf/security-group.json) |
 | `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [db-subnet-group.json](./lab3-vpc-ec2-rds/conf/db-subnet-group.json) |
-| `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./lab3-vpc-ec2-rds/screenshots/) |
+| `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./screenshots/) |
 
 ---
 
