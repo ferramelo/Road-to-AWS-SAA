@@ -16,13 +16,12 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ---
 
-## 📁 Struttura della cartella
-
 | File / Cartella | Descrizione | Link |
 |-----------------|------------|------|
 | `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./lab3-vpc-ec2-rds/backend.tf) |
 | `variables.tf`  | Definizione delle variabili Terraform | [variables.tf](./lab3-vpc-ec2-rds/variables.tf) |
 | `terraform.tfvars` | Valori delle variabili principali | [terraform.tfvars](./lab3-vpc-ec2-rds/terraform.tfvars) |
+| `main.tf`       | File principale che include tutti i moduli | [main.tf](./lab3-vpc-ec2-rds/main.tf) |
 | `vpc.tf`        | Configurazione della VPC, subnet e route table | [vpc.tf](./lab3-vpc-ec2-rds/vpc.tf) |
 | `security.tf`   | Security Groups e regole di accesso | [security.tf](./lab3-vpc-ec2-rds/security.tf) |
 | `ec2.tf`        | Bastion Host EC2 e configurazioni associate | [ec2.tf](./lab3-vpc-ec2-rds/ec2.tf) |
@@ -30,6 +29,7 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./lab3-vpc-ec2-rds/outputs.tf) |
 | `Makefile`      | Comandi rapidi per Terraform (`init`, `plan`, `apply`, `destroy`) | [Makefile](./lab3-vpc-ec2-rds/Makefile) |
 | `scripts/`      | Script di automazione e test | [scripts](./lab3-vpc-ec2-rds/scripts/) |
+| `screenshots/`  | Immagini del laboratorio e output | [screenshots](./lab3-vpc-ec2-rds/screenshots/) |
 
 ---
 
