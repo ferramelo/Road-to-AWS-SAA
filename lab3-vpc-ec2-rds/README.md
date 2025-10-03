@@ -32,7 +32,7 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](./scripts/connect_rds.sh) |
 | `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./scripts/test_infra.sh) |
 | `conf/security-group.json` | Configurazione JSON Security Group | [security-group.json](conf/security-group.json) |
-| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [db-subnet-group.json](conf/db-subnet-group.json) 
+| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [db-subnet-group.json](conf/db-subnet-group.json) |
 | `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./screenshots/) |
 
 ---
