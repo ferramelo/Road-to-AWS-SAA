@@ -15,8 +15,6 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ---
 
-## 📁 Struttura della cartella
-
 | File / Cartella | Descrizione | Link |
 |-----------------|------------|------|
 | `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./backend.tf) |
@@ -31,8 +29,8 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `scripts/connect_bastion.sh` | Connessione SSH al Bastion Host | [connect_bastion.sh](./scripts/connect_bastion.sh) |
 | `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](./scripts/connect_rds.sh) |
 | `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./scripts/test_infra.sh) |
-| `config/security-group.json` | Configurazione JSON Security Group | [conf/security-group.json](./conf/security-group.json) |
-| `config/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [conf/db-subnet-group.json](./conf/db-subnet-group.json)|
+| `config/security-group.json` | Configurazione JSON Security Group | [config/security-group.json](./config/security-group.json) |
+| `config/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [config/db-subnet-group.json](./config/db-subnet-group.json) |
 | `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./screenshots/) |
 
 ---
