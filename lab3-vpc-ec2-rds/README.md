@@ -19,20 +19,20 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 | File / Cartella | Descrizione | Link |
 |-----------------|------------|------|
-| `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./lab3-vpc-ec2-rds/backend.tf) |
-| `variables.tf`  | Definizione delle variabili Terraform | [variables.tf](./lab3-vpc-ec2-rds/variables.tf) |
-| `terraform.tfvars` | Valori delle variabili principali | [terraform.tfvars](./lab3-vpc-ec2-rds/terraform.tfvars) |
-| `vpc.tf`        | Configurazione della VPC, subnet e route table | [vpc.tf](./lab3-vpc-ec2-rds/vpc.tf) |
-| `security.tf`   | Security Groups e regole di accesso | [security.tf](./lab3-vpc-ec2-rds/security.tf) |
-| `ec2.tf`        | Bastion Host EC2 e configurazioni associate | [ec2.tf](./lab3-vpc-ec2-rds/ec2.tf) |
-| `rds.tf`        | Database RDS MySQL | [rds.tf](./lab3-vpc-ec2-rds/rds.tf) |
-| `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./lab3-vpc-ec2-rds/outputs.tf) |
+| `backend.tf`    | Configurazione backend remoto (S3 + DynamoDB per lo stato) | [backend.tf](./backend.tf) |
+| `variables.tf`  | Definizione delle variabili Terraform | [variables.tf](./variables.tf) |
+| `terraform.tfvars` | Valori delle variabili principali | [terraform.tfvars](./terraform.tfvars) |
+| `vpc.tf`        | Configurazione della VPC, subnet e route table | [vpc.tf](./vpc.tf) |
+| `security.tf`   | Security Groups e regole di accesso | [security.tf](./security.tf) |
+| `ec2.tf`        | Bastion Host EC2 e configurazioni associate | [ec2.tf](./ec2.tf) |
+| `rds.tf`        | Database RDS MySQL | [rds.tf](./rds.tf) |
+| `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./outputs.tf) |
 | `Makefile`      | Comandi rapidi per Terraform (`init`, `plan`, `apply`, `destroy`) | [Makefile](./lab3-vpc-ec2-rds/Makefile) |
 | `scripts/connect_bastion.sh` | Connessione SSH al Bastion Host | [connect_bastion.sh](./lab3-vpc-ec2-rds/scripts/connect_bastion.sh) |
-| `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](./lab3-vpc-ec2-rds/scripts/connect_rds.sh) |
-| `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./lab3-vpc-ec2-rds/scripts/test_infra.sh) |
-| `conf/security-group.json` | Configurazione JSON Security Group | [security-group.json](./lab3-vpc-ec2-rds/conf/security-group.json) |
-| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [db-subnet-group.json](./lab3-vpc-ec2-rds/conf/db-subnet-group.json) |
+| `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](.scripts/connect_rds.sh) |
+| `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./scripts/test_infra.sh) |
+| `conf/security-group.json` | Configurazione JSON Security Group | [security-group.json](./conf/security-group.json) |
+| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [db-subnet-group.json](./conf/db-subnet-group.json) |
 | `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./screenshots/) |
 
 ---
