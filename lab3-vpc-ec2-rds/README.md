@@ -28,7 +28,7 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `rds.tf`        | Database RDS MySQL | [rds.tf](./rds.tf) |
 | `outputs.tf`    | Outputs principali dell’infrastruttura | [outputs.tf](./outputs.tf) |
 | `Makefile`      | Comandi rapidi per Terraform (`init`, `plan`, `apply`, `destroy`) | [Makefile](./Makefile) |
-| `scripts/connect_bastion.sh` | Connessione SSH al Bastion Host | [connect_bastion.sh](./lab3-vpc-ec2-rds/scripts/connect_bastion.sh) |
+| `scripts/connect_bastion.sh` | Connessione SSH al Bastion Host | [connect_bastion.sh](./scripts/connect_bastion.sh) |
 | `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](.scripts/connect_rds.sh) |
 | `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./scripts/test_infra.sh) |
 | `conf/security-group.json` | Configurazione JSON Security Group | [security-group.json](./conf/security-group.json) |
