@@ -31,9 +31,8 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `scripts/connect_bastion.sh` | Connessione SSH al Bastion Host | [connect_bastion.sh](./scripts/connect_bastion.sh) |
 | `scripts/connect_rds.sh` | Connessione al DB tramite Bastion | [connect_rds.sh](./scripts/connect_rds.sh) |
 | `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./scripts/test_infra.sh) |
-| `conf/security-group.json` | Configurazione JSON Security Group | [conf/security-group.json](./lab3-vpc-ec2-rds/conf/security-group.json) |
-| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [conf/db-subnet-group.json](./lab3-vpc-ec2-rds/conf/db-subnet-group.json) |
-
+| `conf/security-group.json` | Configurazione JSON Security Group | [conf/security-group.json](./conf/security-group.json) |
+| `conf/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [conf/db-subnet-group.json](./conf/db-subnet-group.json)|
 | `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./screenshots/) |
 
 ---
