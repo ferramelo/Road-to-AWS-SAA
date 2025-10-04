@@ -5,6 +5,12 @@ Garantire disaster recovery replicando i dati tra più regioni AWS.
 
 ---
 
+## 🖼️ Diagramma
+
+![Diagramma](diagram/diagram-4.png)
+
+---
+
 ## 🛠️ Passaggi principali
 
 1. 📦 **Creare bucket S3 primario e secondario**  
@@ -24,19 +30,3 @@ Garantire disaster recovery replicando i dati tra più regioni AWS.
 *Questo laboratorio evidenzia l’importanza della ridondanza geografica per la continuità operativa.*
 
 ---
-
-## 🖼️ Diagramma
-
-```mermaid
-flowchart TD
-    subgraph AWS["AWS Cloud"]
-        S3Primary["S3 BUCKET PRIMARIO"]
-        S3Replica["S3 BUCKET REPLICA"]
-    end
-
-    User["User"] --> S3Primary
-    S3Primary -->|Cross-Region Replication| S3Replica
-
-    %% STILI
-    style S3Primary fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style S3Replica fill:#2c3e50,stroke:#fff,stroke-width:2px
