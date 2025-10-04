@@ -5,6 +5,12 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ---
 
+## 🖼️ Diagramma
+
+![Diagramma](diagram/diagram-3.png)
+
+---
+
 ## 📋 Passaggi Principali
 
 1. 🗄️ **Creare VPC** con subnet pubbliche e private  
@@ -60,7 +66,3 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 *Questo laboratorio consolida i concetti di **networking**, **sicurezza** e **database management** fondamentali per l'esame AWS Solutions Architect Associate.*
 
 ---
-
-## 🖼️ Diagramma
-
-![Diagramma](diagram/diagram-3.png)
