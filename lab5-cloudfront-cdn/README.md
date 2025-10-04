@@ -5,6 +5,12 @@ Distribuire contenuti statici a livello globale con caching e gestione dei perme
 
 ---
 
+## 🖼️ Diagramma
+
+![Diagramma](diagram/diagram-5.png)
+
+---
+
 ## 🛠️ Passaggi principali
 
 1. 📦 **Creare bucket S3** con contenuti statici  
@@ -25,20 +31,3 @@ Distribuire contenuti statici a livello globale con caching e gestione dei perme
 *Questo laboratorio dimostra come ottimizzare la distribuzione di contenuti statici con AWS.*
 
 ---
-
-## 🖼️ Diagramma
-
-```mermaid
-flowchart TD
-    subgraph AWS["AWS Cloud"]
-        S3["S3 BUCKET CONTENUTI STATICI"]
-        CF["CLOUDFRONT DISTRIBUTION"]
-    end
-
-    User["User"] --> CF
-    CF --> S3
-
-    %% STILI
-    style S3 fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style CF fill:#2c3e50,stroke:#fff,stroke-width:2px
-
