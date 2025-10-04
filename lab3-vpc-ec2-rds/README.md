@@ -63,31 +63,4 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ## 🖼️ Diagramma
 
-```mermaid
-flowchart TD
-    subgraph AWS["AWS Cloud"]
-        subgraph VPC["VPC 10.0.0.0/16"]
-            subgraph PublicSubnet["Public Subnet 10.0.1.0/24"]
-                EC2["EC2 BASTION HOST - SSH 22"]
-            end
-            subgraph PrivateSubnet["Private Subnet 10.0.2.0/24"]
-                RDS["RDS MYSQL - DB 3306"]
-            end
-        end
-
-        IGW["INTERNET GATEWAY"]
-        RouteTablePublic["ROUTE TABLE PUB"]
-        RouteTablePrivate["ROUTE TABLE PRIV"]
-    end
-
-    User["User"] -->|SSH| EC2
-    EC2 -->|Query DB| RDS
-    PublicSubnet --> RouteTablePublic
-    PrivateSubnet --> RouteTablePrivate
-
-    %% STILI
-    style EC2 fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style RDS fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style IGW fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style RouteTablePublic fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style RouteTablePrivate fill:#2c3e50,stroke:#fff,stroke-width:2px
+![Diagramma](diagram/diagram-3.png)
