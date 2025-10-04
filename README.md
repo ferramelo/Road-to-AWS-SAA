@@ -78,3 +78,5 @@ Questo repository documenta il mio percorso verso la certificazione **AWS Soluti
 
 ## ⚡ Obiettivo
 Consolidare le competenze pratiche su AWS, documentare i laboratori più rilevanti e prepararsi efficacemente all'esame **AWS SAA**.
+
+---
