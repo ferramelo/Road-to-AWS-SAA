@@ -6,25 +6,6 @@ Questo repository documenta il mio percorso verso la certificazione **AWS Soluti
 
 ![Diagramma](https://raw.githubusercontent.com/ferramelo/Road-to-AWS-SAA/main/path/to/diagram/diagram-1.png)
 
-```mermaid
-flowchart TD
-    A["Lab 1: High Availability & Disaster Recovery"]
-    B["Lab 2: Serverless API"]
-    C["Lab 3: VPC + EC2 + RDS"]
-    D["Lab 4: S3 Cross-Region Replication"]
-    E["Lab 5: CloudFront CDN"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-
-    style A fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style B fill:#34495e,stroke:#fff,stroke-width:2px
-    style C fill:#2c3e50,stroke:#fff,stroke-width:2px
-    style D fill:#34495e,stroke:#fff,stroke-width:2px
-    style E fill:#2c3e50,stroke:#fff,stroke-width:2px
-```
 
 ## 🛠️ Laboratori principali
 
