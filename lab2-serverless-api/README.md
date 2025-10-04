@@ -11,7 +11,7 @@ Creare un’API serverless utilizzando:
 
 ## 🖼️ Diagramma
 
-![Diagramma](diagram/diagram-3.png)
+![Diagramma](diagram/diagram-2.png)
 
 ---
 
