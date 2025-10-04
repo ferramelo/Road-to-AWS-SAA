@@ -4,7 +4,7 @@ Questo repository documenta il mio percorso verso la certificazione **AWS Soluti
 
 ## 🖼️ Diagramma generale
 
-![Diagramma](https://raw.githubusercontent.com/ferramelo/Road-to-AWS-SAA/main/path/to/diagram/diagram-1.png)
+![Diagramma](diagram/diagram-1.png)
 
 
 ## 🛠️ Laboratori principali
