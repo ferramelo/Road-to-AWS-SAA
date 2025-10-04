@@ -4,7 +4,7 @@ Questo repository documenta il mio percorso verso la certificazione **AWS Soluti
 
 ## 🖼️ Diagramma generale
 
-![Diagramma](diagram/diagram-1.png)
+![Diagramma](diagram/diagram-0.png)
 
 
 ## 🛠️ Laboratori principali
