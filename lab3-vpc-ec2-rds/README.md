@@ -63,6 +63,4 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 
 ## 🖼️ Diagramma
 
-![Diagramma Lab3](./diagram/diagram-3.png)
-
-
+![Diagram lab3](diagram/lab3/diagram-3.png)
