@@ -36,7 +36,3 @@ Creare un’API serverless utilizzando:
 *Questo laboratorio mostra come costruire architetture scalabili senza server dedicati.*
 
 ---
-
-## 🖼️ Diagramma
-
----
