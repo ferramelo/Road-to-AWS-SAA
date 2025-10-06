@@ -1,4 +1,3 @@
-{
   "SecurityGroupName": "Lab3-SG",
   "Description": "Security Group per EC2 e RDS nel Lab 3",
   "VPC": "Lab3-VPC",
@@ -27,3 +26,4 @@
     }
   ]
 }
+
