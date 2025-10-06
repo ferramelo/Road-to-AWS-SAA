@@ -8,7 +8,7 @@ KEY_PATH="tuo percorso"
 BASTION_IP=$(terraform output -raw bastion_public_ip)
 RDS_ENDPOINT=$(terraform output -raw rds_endpoint)
 DB_USER="admin"          # oppure var.db_username
-DB_PASS="Simona19!   "   # oppure var.db_password
+DB_PASS="ChangeMe123!"   # oppure var.db_password
 DB_NAME="labdb"          # oppure var.db_name
 
 # Apri tunnel SSH verso RDS tramite Bastion
