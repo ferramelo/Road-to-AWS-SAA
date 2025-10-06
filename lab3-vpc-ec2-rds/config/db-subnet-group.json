@@ -1,4 +1,3 @@
-{
   "DBSubnetGroupName": "Lab3-DB-SubnetGroup",
   "Description": "Subnet Group per RDS nel Lab 3",
   "Subnets": [
