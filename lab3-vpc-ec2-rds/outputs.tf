@@ -7,3 +7,6 @@ output "rds_endpoint" {
   description = "Endpoint del database RDS"
   value       = aws_db_instance.mysql.endpoint
 }
+
+
+
