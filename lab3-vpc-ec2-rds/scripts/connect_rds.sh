@@ -1,19 +1,18 @@
 #!/bin/bash
-# Connessione al database RDS MySQL tramite Bastion
-# Richiede installazione di mysql client
+# Connessione al database RDS MySQL tramite Bastion usando output Terraform
 
-BASTION_IP=$1
-RDS_ENDPOINT=$2
-DB_USER=$3
-DB_PASS=$4
-DB_NAME=$5
+# Percorso chiave privata
+KEY_PATH="tuo percorso"
 
-if [ -z "$BASTION_IP" ] || [ -z "$RDS_ENDPOINT" ]; then
-  echo "Usage: ./connect_rds.sh <BASTION_IP> <RDS_ENDPOINT> <DB_USER> <DB_PASS> <DB_NAME>"
-  exit 1
-fi
+# Recupera gli output Terraform
+BASTION_IP=$(terraform output -raw bastion_public_ip)
+RDS_ENDPOINT=$(terraform output -raw rds_endpoint)
+DB_USER="admin"          # oppure var.db_username
+DB_PASS="Simona19!   "   # oppure var.db_password
+DB_NAME="labdb"          # oppure var.db_name
 
-ssh -i lab3-key.pem -L 3307:$RDS_ENDPOINT:3306 ubuntu@$BASTION_IP -N &
+# Apri tunnel SSH verso RDS tramite Bastion
+ssh -i $KEY_PATH -L 3307:$RDS_ENDPOINT:3306 ubuntu@$BASTION_IP -N &
 SSH_PID=$!
 
 echo "Tunnel SSH aperto. Ora puoi connetterti al DB con:"
