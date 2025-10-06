@@ -39,7 +39,6 @@ Progettare un'infrastruttura **sicura** e **scalabile** su AWS.
 | `scripts/test_infra.sh` | Test rapido infrastruttura EC2 + RDS | [test_infra.sh](./scripts/test_infra.sh) |
 | `config/security-group.json` | Configurazione JSON Security Group | [config/security-group.json](./config/security-group.json) |
 | `config/db-subnet-group.json` | Configurazione JSON DB Subnet Group | [config/db-subnet-group.json](./config/db-subnet-group.json) |
-| `screenshots/`  | Screenshot dei passaggi e configurazioni | [screenshots](./screenshots/) |
 
 ---
 
