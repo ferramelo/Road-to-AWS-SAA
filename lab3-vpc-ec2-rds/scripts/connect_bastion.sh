@@ -1,12 +1,16 @@
 #!/bin/bash
-# Connessione SSH al Bastion Host
-# Usa la chiave privata lab3-key.pem
+# Connessione SSH al Bastion Host usando output Terraform
 
-BASTION_IP=$1
+# Percorso chiave privata
+KEY_PATH="tuo percorso"
+
+# Recupera l'IP pubblico del Bastion dall'output Terraform
+BASTION_IP=$(terraform output -raw bastion_public_ip)
 
 if [ -z "$BASTION_IP" ]; then
-  echo "Usage: ./connect_bastion.sh <BASTION_PUBLIC_IP>"
+  echo "Errore: impossibile recuperare l'IP pubblico del Bastion. Esegui 'terraform apply' prima."
   exit 1
 fi
 
-ssh -i lab3-key.pem ubuntu@$BASTION_IP
+echo "Connessione a Bastion Host $BASTION_IP..."
+ssh -i $KEY_PATH ubuntu@$BASTION_IP
