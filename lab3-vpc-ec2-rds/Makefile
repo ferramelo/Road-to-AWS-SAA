@@ -1,6 +1,5 @@
 # =========================================
 # 🚀 Terraform Lab 3 - VPC + EC2 + RDS
-# Autore: Carmelo Ferraro
 # =========================================
 
 # Variabili (modifica con i propri dati)
