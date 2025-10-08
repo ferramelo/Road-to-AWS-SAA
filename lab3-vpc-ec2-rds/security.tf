@@ -1,7 +1,7 @@
 # Security Group per il Bastion Host
 resource "aws_security_group" "bastion_sg" {
   name        = "bastion-sg"                              # Nome dello security group per il Bastion
-  description = "Permette SSH al Bastion Host"           # Descrizione funzionale dello scopo dello SG
+  description = "Permette SSH al Bastion Host"            # Descrizione funzionale dello scopo dello SG
   vpc_id      = aws_vpc.main.id                           # Associa questo SG alla VPC principale
 
   ingress {
