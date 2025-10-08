@@ -23,17 +23,17 @@ variable "bastion_ami" {
 }
 
 variable "bastion_instance_type" { 
-  default = "t3.micro"                           # Tipo di istanza EC2 per la Bastion, dimensione piccola e a basso costo
+  default = "t3.micro"                          # Tipo di istanza EC2 per la Bastion, dimensione piccola e a basso costo
 }
 
 variable "db_username" { 
-  default = "admin"                              # Username di accesso al database RDS
+  default = "admin"                             # Username di accesso al database RDS
 }
 
 variable "db_password" { 
-  default = "ChangeMe123!"                       # Password iniziale per il database, va modificata in produzione per motivi di sicurezza
+  default = "ChangeMe123!"                      # Password iniziale per il database, va modificata in produzione per motivi di sicurezza
 }
 
 variable "my_ip_cidr" { 
-  default = "158.47.227.0/24"                    # CIDR del proprio indirizzo IP pubblico o range, per limitare accesso SSH al Bastion
+  default = "158.47.227.0/24"                   # CIDR del proprio indirizzo IP pubblico o range, per limitare accesso SSH al Bastion
 }
