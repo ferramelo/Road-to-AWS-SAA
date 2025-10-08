@@ -4,7 +4,7 @@ output "bastion_public_ip" {
 }
 
 output "rds_endpoint" {
-  description = "Endpoint del database RDS"                # Descrizione per identificare chiaramente l’output
-  value       = aws_db_instance.mysql.endpoint             # Valore restituito: hostname/endpoint dell’istanza DB RDS denominata "mysql"
+  description = "Endpoint del database RDS"               # Descrizione per identificare chiaramente l’output
+  value       = aws_db_instance.mysql.endpoint            # Valore restituito: hostname/endpoint dell’istanza DB RDS denominata "mysql"
 }
 
