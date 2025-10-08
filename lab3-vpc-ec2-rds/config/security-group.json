@@ -1,28 +1,31 @@
-  "SecurityGroupName": "Lab3-SG",
-  "Description": "Security Group per EC2 e RDS nel Lab 3",
-  "VPC": "Lab3-VPC",
-  "IngressRules": [
+{
+  "SecurityGroupName": "Lab3-SG",                           // Nome identificativo del Security Group usato nel laboratorio 3
+  "Description": "Security Group per EC2 e RDS nel Lab 3",  // Descrizione funzionale che indica che questo SG protegge istanze EC2 e database RDS
+  "VPC": "Lab3-VPC",                                        // VPC a cui il Security Group è associato
+
+  "IngressRules": [                                         // Regole di ingresso (accesso in entrata) per controllare il traffico autorizzato
     {
-      "Protocol": "tcp",
-      "PortRange": "22",
-      "Source": "TUO_IP"
+      "Protocol": "tcp",                                    // Protocollo TCP per SSH
+      "PortRange": "22",                                    // Porta 22, tipicamente per SSH
+      "Source": "TUO_IP"                                    // Origine limitata al tuo IP per motivi di sicurezza
     },
     {
-      "Protocol": "tcp",
-      "PortRange": "80",
-      "Source": "0.0.0.0/0"
+      "Protocol": "tcp",                                    // Protocollo TCP per HTTP
+      "PortRange": "80",                                    // Porta 80, per traffico web pubblico
+      "Source": "0.0.0.0/0"                                 // Accesso da qualsiasi indirizzo IP (aperto a internet)
     },
     {
-      "Protocol": "tcp",
-      "PortRange": "3306",
-      "Source": "EC2-Private-IP-or-SG"
+      "Protocol": "tcp",                                    // Protocollo TCP per MySQL
+      "PortRange": "3306",                                  // Porta 3306, usata dal database MySQL
+      "Source": "EC2-Private-IP-or-SG"                      // Permette l’accesso solo da indirizzi privati delle EC2 approvate o da un altro Security Group specifico
     }
   ],
-  "EgressRules": [
+
+  "EgressRules": [                                          // Regole di uscita (accesso in uscita) che controllano dove le risorse possono comunicare
     {
-      "Protocol": "-1",
-      "PortRange": "all",
-      "Destination": "0.0.0.0/0"
+      "Protocol": "-1",                                     // Protocollo -1 = tutti i protocolli
+      "PortRange": "all",                                   // Tutte le porte
+      "Destination": "0.0.0.0/0"                            // Permette traffico verso qualsiasi destinazione (internet ovunque)
     }
   ]
 }
