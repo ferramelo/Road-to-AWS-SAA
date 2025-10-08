@@ -1,7 +1,8 @@
-  "DBSubnetGroupName": "Lab3-DB-SubnetGroup",
-  "Description": "Subnet Group per RDS nel Lab 3",
+{
+  "DBSubnetGroupName": "Lab3-DB-SubnetGroup",       // Nome identificativo del gruppo subnet per il database RDS nel laboratorio 3
+  "Description": "Subnet Group per RDS nel Lab 3",  // Descrizione del gruppo, utile per riconoscere lo scopo nella console o API AWS
   "Subnets": [
-    "10.0.3.0/24",
-    "10.0.4.0/24"
+    "10.0.3.0/24",                                  // Primo CIDR privato assegnato alla subnet nel gruppo, usato per isolare risorse RDS
+    "10.0.4.0/24"                                   // Secondo CIDR privato per alta disponibilità o distribuzione geografica
   ]
 }
